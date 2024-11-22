@@ -1,0 +1,63 @@
+/* css buttons */
+.css-button, .css-button:disabled, .css-button-disabled, .css-button:active, .css-button-active {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 100%;
+    padding: 10px 14px 10px 14px;
+    margin: 4px 2px;
+    text-decoration: none;
+    text-align:center;
+    vertical-align: middle;
+    border: 1px;
+    display: inline-block;
+  }
+  
+  .css-button-disabled, .css-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .css-button:hover, .css-button-disabled:hover, .css-button-active:hover, .css-button:hover:active, .css-buton:hover:disabled {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  
+  /* qualifiers for css-button, css-button-disabled, css-button-active  (e.g. class="css-button btn-xsmall") */
+  .btn-xsmall, .btn-xsmall:active, .btn-xsmall:disabled {
+      font-size: 70%;
+      padding: 5px 10px 5px 10px;
+  }
+  
+  .btn-small, .btn-small:active, .btn-small:disabled {
+      font-size: 85%;
+      padding: 8px 12px 8px 12px;
+  }
+  
+  .btn-large, .btn-large:active, .btn-large:disabled {
+      font-size: 110%;
+      padding: 12px 20px 12px 20px;
+  }
+  
+  .btn-xlarge, .btn-xlarge:active, .btn-xlarge:disabled {
+      font-size: 125%;
+      padding: 14px 24px 14px 24px;
+  }
+  .pc_page_button_container {
+      text-align:center;
+      margin-bottom:5px;
+  }
+  

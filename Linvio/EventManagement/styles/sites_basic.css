@@ -1,0 +1,716 @@
+/* Basic Style Sheet for use with Linvio Events Sites pages */
+
+@import url("fullcalendar.css");
+
+
+.evt_attendee_table {
+    width:100%;
+}  
+
+.evt_attendee_table th{
+    text-align:left;
+}  
+
+.evt_list_thumbnail {
+    border:none;
+    width:250px;
+    padding-right:10px;
+}
+.evt_speakers_list_icon_column .evt_list_thumbnail {
+    width:90px;
+    }
+
+
+.evt_box_bottom {  width:100%; clear:both; display:inline-block;} 
+
+.labelColumn {
+    width:150px;
+    text-align:right;
+   }
+
+.evt_expandible_content {
+  display:none;  /* start out hidden */
+}
+
+.evt_item_detail_toggle_link {font-size:.8em;}
+
+
+.evt_fee_schedule_name { font-weight:bold;}
+.evt_fee_schedule_amount { font-weight:bold;}
+
+/* Exhibitors */
+
+
+#evt_quick_event_exhibitors_box {
+  width:100%;
+}
+#evt_event_exhibitor_flexbox {
+   min-height: 100px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display:         -ms-flexbox;
+   display:         flex;
+   -webkit-flex-flow: row;
+           -ms-flex-flow: row;
+       flex-flow: row;
+   -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+
+#evt_event_exhibitor_flexbox img.evt_exhibitor_logo {
+  max-height:75px;
+}
+
+
+#evt_conf_exhibitors_box {
+  width:100%;
+}
+#evt_conf_exhibitor_flexbox {
+   min-height: 200px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display:         -ms-flexbox;
+   display:         flex;
+   -webkit-flex-flow: row;
+           -ms-flex-flow: row;
+       flex-flow: row;
+   -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+#evt_conf_exhibitor_flexbox .evt_exhibitor_logo_box {
+  margin:10px;
+}
+#evt_conf_exhibitor_flexbox img.evt_exhibitor_logo {
+  max-height:100px;
+}
+/* --------------- */
+
+#map_canvas {
+	width:100%;
+	height:300px;
+}
+
+#evt_conf_detail_page tr {
+	vertical-align:top;
+}
+
+.evt_conf_speakers_table tr {
+	vertical-align:top;
+}
+
+#evt_conf_reg_page tr {
+  vertical-align:top;
+}
+
+.evt_conf_cart_total, .evt_sem_cart_total {
+  display:block;
+  width:100%;
+  border-top:1px solid #e0e0e0;
+  padding-top:15px;
+  margin-left:auto;
+  text-align:right;
+}
+
+.evt_map_div {
+	border:solid #e9e9e9 1px;
+}
+.evt_map_div_inner {
+	padding:0px;
+}
+
+ #invitation_code_box {
+   border: solid 1px #e0e0e0;
+   padding: 10px;
+ }
+
+.evt_coupon_panel {
+   /* text-align:right;    */
+   border-radius: 5px;
+   padding:20px 20px 20px 20px;
+   margin-top:20px;
+   margin-bottom:20px;
+   border: solid 1px #b0b0b0;
+   background: #e0e0e0;
+}
+.evt_coupon_panel input[type="submit"] {
+    margin-bottom: 12px;
+}
+table.evt_reg_cart {
+    width:100%;
+    border:0px solid #e0e0e0;    
+    /* border-radius:4px; */
+    }
+table.evt_reg_cart td {
+    padding:4px;
+    }
+.evt_product_selection_table td, .evt_product_selection_table th  {
+   padding:5px;
+}
+.evt_session_selection_table td, .evt_session_selection_table th  {
+   padding:2px;
+}
+
+/* Donation options layout */
+.evt_reg_donation_panel, .evt_reg_attendee_details_panel, .evt_reg_payment_options_panel,
+.evt_reg_attendee_cart_panel {
+    border-radius: 5px;
+    padding:0px 20px 20px 20px;
+    border: solid 1px #e0e0e0;
+}
+
+.evt_reg_payment_options_panel {
+   margin-top:20px;
+}
+.evt_reg_attendee_cart_panel {
+   margin-bottom:20px;
+}
+/* Conference sessions list */
+.rightAlign_collapsible_col {
+  text-align:right;
+}
+.leftAlign_collapsible_col {
+  text-align:left;
+}
+.centerAlign_collapsible_col {
+  text-align:center;
+}
+img.evt_conf_reg_unchecked_session_icon {
+	height:22px;
+	width:22px;
+	
+}
+
+.evt_sidebar_date_time {
+	margin-top:10px;
+	
+}
+/* Event details grid (time/location/avail seats) */
+.evt_event_details_grid {
+    display:grid;
+    grid-template-columns: 40px auto;
+    border-bottom: 1px solid #e0e0e0;
+    }
+.evt_event_details_grid > div {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.evt_event_details_grid .text_content {
+    border-left:1px solid #e0e0e0;
+    padding:2px 10px 2px 10px;
+    
+    }
+    
+.evt_event_details_grid .icon_column {
+    padding:12px 10px 5px 10px;
+    text-align:center;
+    }
+
+/* Add to calendar icons */
+.evt_add_to_calendar_links {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:small;
+}
+img.evt_add_to_calendar_icon {
+	height:16px;
+	width:16px;
+	margin-right:4px;
+	background: url(../images/add-to-calendar-16.png);
+	background-repeat:no-repeat;
+	vertical-align:middle;
+}
+img.evt_add_to_google_calendar_icon {
+	height:16px;
+	width:16px;
+	margin-left:20px;
+	background: url(../images/google-icon-16.png);
+	background-repeat:no-repeat;
+	vertical-align:text-top;
+}
+img.evt_add_to_yahoo_calendar_icon {
+	height:16px;
+	width:16px;
+	margin-left:20px;
+	background: url(../images/yahoo-icon-16.png);
+	background-repeat:no-repeat;
+	vertical-align:text-top;
+}
+img.evt_add_to_outlook_calendar_icon {
+	height:16px;
+	width:16px;
+	margin-left:20px;
+	background: url(../images/outlook-icon-16.png);
+	background-repeat:no-repeat;
+	vertical-align:text-top;
+}
+img.evt_add_to_ical_icon {
+	height:16px;
+	width:16px;
+	margin-left:20px;
+	background: url(../images/ical-icon-16.png);
+	background-repeat:no-repeat;
+	vertical-align:text-top;
+}
+.evt_session_selection_table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+.evt_session_selection_table td, .evt_session_selection_table th {
+    padding:5px;
+}
+.evt_session_table_name_value {
+    font-weight:bold;
+}
+
+/* Event pass formatting */
+.evt_pass_box {
+	border:2px solid #f0f0f0;
+	width:900px;
+	padding:10px;
+	page-break-inside:avoid;
+}
+.evt_pass_grid {
+	border-collapse:collapse;width:100%;padding:5px;	
+}
+.evt_pass_details_label {
+	font-weight:bold;padding-right:5px;
+}
+.evt_pass_col1 {
+	vertical-align:top;width:90%;		
+}
+.evt_pass_col3 {
+	vertical-align:top;white-space: nowrap;
+}
+
+/* Webinars */
+.joinURLBox {
+    padding: 20px;
+    border: solid 1px #d0d0d0;
+    border-radius: 5px;
+    text-align: center;
+    background: aliceblue;
+}
+
+
+/* Event list */
+.evt_event_list_table tr {
+	vertical-align:top;
+}
+.evt_event_list_item_text {
+
+  margin-bottom:15px;
+}
+.evt_event_list_item_name {
+    font-weight:bold;
+    }
+.evt_event_list_view_select_bar {
+	width:100%;
+	text-align:right;
+	margin-bottom:5px;
+}
+/* Social Media Links - default orientation is inline */
+.evt_social_media_links {
+	margin-top:10px;
+	} 
+
+/* Sponsors */
+#evt_webmeeting_sponsors_box {
+  margin-top:20px;
+}
+#evt_quick_event_sponsors_box {
+  width:100%;
+}
+#evt_event_sponsor_flexbox {
+   min-height: 100px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display:         -ms-flexbox;
+   display:         flex;
+   -webkit-flex-flow: row;
+           -ms-flex-flow: row;
+       flex-flow: row;
+   -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+
+#evt_event_sponsor_flexbox img.evt_sponsor_logo {
+  max-height:75px;
+
+}
+
+#evt_sem_sponsors_box {
+  width:100%;
+}
+#evt_sem_sponsor_flexbox {
+   min-height: 200px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display:         -ms-flexbox;
+   display:         flex;
+   -webkit-flex-flow: row;
+           -ms-flex-flow: row;
+       flex-flow: row;
+   -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+#evt_sem_sponsor_flexbox .evt_sponsor_logo_box {
+  margin:10px;
+}
+#evt_sem_sponsor_flexbox img.evt_sponsor_logo {
+  max-height:100px;
+}
+
+#evt_conf_sponsors_box {
+  width:100%;
+}
+#evt_conf_sponsor_flexbox {
+   min-height: 200px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display:         -ms-flexbox;
+   display:         flex;
+   -webkit-flex-flow: row;
+           -ms-flex-flow: row;
+       flex-flow: row;
+   -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+#evt_conf_sponsor_flexbox .evt_sponsor_logo_box {
+  margin:10px;
+}
+#evt_conf_sponsor_flexbox img.evt_sponsor_logo {
+  max-height:100px;
+}
+
+.evt_conf_details_grid td {vertical-align:top;}
+
+
+/* Quick Event Pages */
+#evt_quickevent_ticket_info_box {
+	border: 1px solid #e0e0e0;
+	border-radius: 0px;
+	padding:7px;
+}
+#evt_quickevent_ticket_info_box > .evt_box_header > h2 {
+   margin-top:0px;
+   padding-top:0px;
+}
+.evt_fees_table { width:100%;}
+.evt_fees_table > tbody > tr > td,.evt_fees_table > thead > tr > th {
+  padding:4px;
+  vertical-align: top;
+}
+.evt_fees_table > tbody > tr {
+	border-bottom:1px solid #e0e0e0;
+}
+.evt_quickevent_item_col {text-align:left;}
+.evt_quickevent_price_col {text-align:right;}
+.evt_quickevent_qty_col {text-align:right;}
+#evt_quick_event_detail #map_canvas {
+  width:100%;
+}
+#evt_quickevent_where_box {
+	border: 1px solid #e0e0e0;
+	border-radius: 0px;
+	padding: 7px;
+}
+#evt_quickevent_where_box > .evt_box_header > h2 {margin-top:0px;padding-top:0px}
+#evt_quick_event_detail #evt_other_map_links { font-size:.9em;	}
+#evt_quickevent_where_box .evt_event_details_grid {
+    border-bottom:none;
+}
+#evt_quickevent_where_box .evt_event_details_grid .text_content {
+    /* border-left:none; */
+}
+#evt_quickevent_where_box .evt_event_details_grid > div {
+    border-top:none;
+    border-bottom: 1px solid #e0e0e0;
+}
+.evt_quickevent_register_table {
+	margin-left:auto;
+	margin-top:10px;
+}
+.evt_quickevent_register_table .fieldColumn input[type="submit"] {
+	width:100%;
+}
+
+#quick_event_detail_flex {
+ min-height: 400px;
+ margin: 0px;
+ padding: 0px;
+ display:         -webkit-box;
+ display:         -webkit-flex;
+ display:         -ms-flexbox;
+ display:         flex;
+ -webkit-flex-flow: row;
+     -ms-flex-flow: row;
+         flex-flow: row;
+ }
+
+#quick_event_detail_flex > article {
+ margin: 4px 10px 4px 0px;
+ padding: 5px 5px 5px 0px;
+ border: 0px solid #cccc33;
+ border-radius: 0pt;
+         -webkit-box-flex: 3;
+         -webkit-flex: 3 1 60%;
+             -ms-flex: 3 1 60%;
+                 flex: 3 1 60%;
+         -webkit-box-ordinal-group: 2;
+         -webkit-order: 1;
+             -ms-flex-order: 1;
+                 order: 1;
+ }
+
+#quick_event_detail_flex > aside {
+ margin: 4px 0px 4px 0px;
+ padding: 5px 0px 0px 0px;
+ border: 0px solid #8888bb;
+ border-radius: 0pt;
+         -webkit-box-flex: 1;
+         -webkit-flex: 1 6 40%;
+             -ms-flex: 1 6 40%;
+                 flex: 1 6 40%;
+         -webkit-box-ordinal-group: 3;
+         -webkit-order: 2;
+             -ms-flex-order: 2;
+                 order: 2;
+ }
+
+/* ------- Event List Calendar Page "Icon" used when no images are avail ---- */
+
+.evt_list_calendar_icon {
+  font-family: Verdana;
+  width:60px;
+  margin: 0px 10px 20px 0px;
+  border: 1px #e0e0e0 solid;
+  border-radius:2px;
+  box-sizing: border-box;
+}
+.evt_cal_icon_month {
+  text-align:center;
+  color:white;
+  font-size:.9em;
+  border-radius:2px 2px 0px 0px;
+  background-color:#a0a0a0;
+  padding:2px 2px 4px 2px;
+}
+.evt_cal_icon_day {
+  border:1px solid #e0e0e0;
+  border-top:0px;
+  margin-bottom:1px;
+  padding:0px 0px 5px 0px;
+  text-align:center;
+  color:#3f3f3f;
+
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(201,201,201,0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(201,201,201,0.65))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(201,201,201,0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(201,201,201,0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(201,201,201,0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(201,201,201,0.65) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6c9c9c9',GradientType=0 ); /* IE6-9 */
+
+}
+.evt_cal_icon_day .day_of_month {
+    font-size:1.5em;
+    font-weight: bold;
+  }
+.evt_cal_icon_day .day_of_week {
+    font-size:.7em;
+  }
+/* ---------------------------------------- */
+
+/* ------- 2 column (50/50) layout, which collapses to single column -------- */
+.evt_flex_two_columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow:row;
+      -ms-flex-flow:row;
+          flex-flow:row;
+
+}
+.evt_flex_two_columns .flex_item_left {
+  -webkit-box-ordinal-group:2;
+  -webkit-order:1;
+      -ms-flex-order:1;
+          order:1;
+  margin:0px 20px 0px 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.evt_flex_two_columns .flex_item_right {
+  -webkit-box-ordinal-group:3;
+  -webkit-order:2;
+      -ms-flex-order:2;
+          order:2;
+  margin:0px 0px 0px 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+
+}
+/* ---- Attendee List ------------------------------------- */ 
+.evt_attendee_profile_thumb {
+    background:#a9a9a9;
+    color:white;
+    border-radius:50%;
+    line-height:45px;
+    height:45px;
+    width:45px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:1.2em;
+}
+.evt_attendee_list_company {
+    font-size:.85em;
+}
+/* ---- Speaker List & Profile ------------------------------------- */ 
+.evt_speaker_profile_thumb {
+    border-radius:50%;
+    line-height:100px;
+    height:100px;
+    width:100px;
+    text-align:center;
+    vertical-align:middle;
+}
+.evt_speaker_profile_thumb .no_image {
+    background:#a9a9a9;
+    color:white;
+    text-align:center;
+    vertical-align:middle;
+    font-size:1.2em;
+}
+.evt_speakers_list_row_grid {
+    display:grid;
+    grid-template-columns: 100px auto;
+}
+
+a.evt_speaker_list_link {
+    text-decoration: none;
+}
+.evt_speaker_list_name {
+    font-size:1.1em;
+    font-weight:bold;
+}
+.evt_speaker_list_title {
+    font-size:.75em;
+}
+.evt_speaker_list_company {
+    font-size:.85em;
+}
+.evt_speakers_list_panel {
+    text-align:center;
+}
+.evt_speakers_list_panel .evt_speaker_profile_thumb {
+    height: 250px;
+    width: auto;
+    border-radius: 0px;
+}
+.evt_speaker_profile_image {
+    max-width:200px;
+    /* float:left; */
+    margin:0px 10px 10px 0px;
+}
+.evt_speaker_profile_name {
+    font-size:1.5em;
+}
+.evt_speaker_profile_title {
+}
+.evt_speaker_profile_company {
+}
+.evt_speaker_bio_flexbox {
+   display: flex;
+}
+.evt_speaker_bio_flexbox .evt_speaker_bio_image {
+   margin-right:20px;
+}
+/* -- MyEvents page styling --------------------------------------- */ 
+
+.evt_myevents_attendee_box {
+  margin-top:5px;
+  border-radius:5px;
+  margin-bottom:5px;
+  border:1px solid #e0e0e0;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex-flow:row;
+      -ms-flex-flow:row;
+          flex-flow:row;
+  -webkit-flex-wrap:wrap;
+      -ms-flex-wrap:wrap;
+          flex-wrap:wrap;
+}
+.evt_myevents_attendee_box .evt_attendee_name {
+  font-weight: bold;
+}
+.evt_myevents_attendee_box .evt_flex_item_left {
+  -webkit-box-ordinal-group:2;
+  -webkit-order:1;
+      -ms-flex-order:1;
+          order:1;
+  padding:5px;
+  width:200px;
+}
+.evt_myevents_attendee_box .evt_flex_item_right {
+  -webkit-box-ordinal-group:3;
+  -webkit-order:2;
+      -ms-flex-order:2;
+          order:2;
+  padding:5px;
+  width:200px;
+}
+/* ----------------------------------------- */ 
+
+.evt_contact_form_text_area{
+  height:150px;
+  width:450px;
+}
+
