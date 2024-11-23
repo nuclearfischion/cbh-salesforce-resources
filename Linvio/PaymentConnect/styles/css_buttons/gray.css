@@ -1,0 +1,73 @@
+/* css buttons */
+.css-button, .css-button:disabled, .css-button-disabled, .css-button:active, .css-button-active {
+    background: #d7d9db;
+    background-image: -webkit-linear-gradient(top, #d7d9db, #cccccc);
+    background-image: -moz-linear-gradient(top, #d7d9db, #cccccc);
+    background-image: -ms-linear-gradient(top, #d7d9db, #cccccc);
+    background-image: -o-linear-gradient(top, #d7d9db, #cccccc);
+    background-image: linear-gradient(to bottom, #d7d9db, #cccccc);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #595959;
+    font-size: 100%;
+    padding: 10px 14px 10px 14px;
+    margin: 4px 2px;
+    border: solid #c9c9c9 2px;
+    text-decoration: none;
+    text-align:center;
+    vertical-align: middle;
+    border: 1px;
+    display: inline-block;
+  }
+  
+  .css-button-disabled, .css-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .css-button:hover, .css-button-disabled:hover, .css-button-active:hover, .css-button:hover:active, .css-buton:hover:disabled {
+    background: #eaeced;
+    background-image: -webkit-linear-gradient(top, #eaeced, #d4d4d4);
+    background-image: -moz-linear-gradient(top, #eaeced, #d4d4d4);
+    background-image: -ms-linear-gradient(top, #eaeced, #d4d4d4);
+    background-image: -o-linear-gradient(top, #eaeced, #d4d4d4);
+    background-image: linear-gradient(to bottom, #eaeced, #d4d4d4);
+    text-decoration: none;
+  }
+  
+  /* qualifiers for css-button, css-button-disabled, css-button-active  (e.g. class="css-button btn-xsmall") */
+  .btn-xsmall, .btn-xsmall:disabled, .btn-xsmall:active {
+      font-size: 70%;
+      padding: 5px 10px 5px 10px;
+      background: transparent;
+      border: 1px solid #d7d9db;
+  }
+  .btn-xsmall.css-button:hover, 
+  .btn-xsmall.css-button-disabled:hover, 
+  .btn-xsmall.css-button-active:hover, 
+  .btn-xsmall.css-button:hover:active, 
+  .btn-xsmall.css-buton:hover:disabled {
+    background-image: none;
+  }
+  .btn-small, .btn-small:disabled, .btn-small:active {
+      font-size: 85%;
+      padding: 8px 12px 8px 12px;
+  }
+  
+  .btn-large, .btn-large:disabled, .btn-large:active {
+      font-size: 110%;
+      padding: 12px 20px 12px 20px;
+  }
+  
+  .btn-xlarge, .btn-xlarge:disabled, .btn-xlarge:active {
+      font-size: 125%;
+      padding: 14px 24px 14px 24px;
+  }
+  
+  .pc_page_button_container {
+    text-align:center;
+    margin-bottom:5px;
+  }
+  
