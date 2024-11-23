@@ -1,22 +1,23 @@
 :root {
+    --button-background-color-primary: #00BFF3;
     --button-text-color-primary: #000000;
 }
 
 /* css buttons */
 .css-button, .css-button:disabled, .css-button-disabled, .css-button:active, .css-button-active {
-    background: #3498db;
-    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    background: var(--button-background-color-primary);
+    background-image: -webkit-linear-gradient(top, var(--button-background-color-primary), #2980b9);
+    background-image: -moz-linear-gradient(top, var(--button-background-color-primary), #2980b9);
+    background-image: -ms-linear-gradient(top, var(--button-background-color-primary), #2980b9);
+    background-image: -o-linear-gradient(top, var(--button-background-color-primary), #2980b9);
+    background-image: linear-gradient(to bottom, var(--button-background-color-primary), #2980b9);
     -webkit-border-radius: 1000px;
     -moz-border-radius: 1000px;
     border-radius: 1000px;
     font-family: Arial;
     color: var(--button-text-color-primary);
     font-size: 100%;
-    padding: 10px 14px 10px 14px;
+    padding: .75em 2.5em;
     margin: 4px 2px;
     text-decoration: none;
     text-align:center;
@@ -32,11 +33,11 @@
   
   .css-button:hover, .css-button-disabled:hover, .css-button-active:hover, .css-button:hover:active, .css-buton:hover:disabled {
     background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    background-image: -webkit-linear-gradient(top, #3cb0fd, var(--button-background-color-primary));
+    background-image: -moz-linear-gradient(top, #3cb0fd, var(--button-background-color-primary));
+    background-image: -ms-linear-gradient(top, #3cb0fd, var(--button-background-color-primary));
+    background-image: -o-linear-gradient(top, #3cb0fd, var(--button-background-color-primary));
+    background-image: linear-gradient(to bottom, #3cb0fd, var(--button-background-color-primary));
     text-decoration: none;
   }
   
