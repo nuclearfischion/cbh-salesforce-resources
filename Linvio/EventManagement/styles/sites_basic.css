@@ -2,6 +2,10 @@
 
 @import url("fullcalendar.css");
 
+:root {
+  --border-color: #e0e0e0;
+}
+
 
 .evt_attendee_table {
     width:100%;
@@ -121,7 +125,7 @@
 .evt_conf_cart_total, .evt_sem_cart_total {
   display:block;
   width:100%;
-  border-top:1px solid #e0e0e0;
+  border-top:1px solid var(--border-color);
   padding-top:15px;
   margin-left:auto;
   text-align:right;
@@ -135,26 +139,23 @@
 }
 
  #invitation_code_box {
-   border: solid 1px #e0e0e0;
+   border: solid 1px var(--border-color);
    padding: 10px;
  }
 
 .evt_coupon_panel {
-   /* text-align:right;    */
    border-radius: 5px;
    padding:20px 20px 20px 20px;
    margin-top:20px;
    margin-bottom:20px;
-   border: solid 1px #b0b0b0;
-   background: #e0e0e0;
+   border: solid 1px var(--border-color);
 }
 .evt_coupon_panel input[type="submit"] {
     margin-bottom: 12px;
 }
 table.evt_reg_cart {
     width:100%;
-    border:0px solid #e0e0e0;    
-    /* border-radius:4px; */
+    border: 0px solid var(--border-color);
     }
 table.evt_reg_cart td {
     padding:4px;
@@ -171,7 +172,7 @@ table.evt_reg_cart td {
 .evt_reg_attendee_cart_panel {
     border-radius: 5px;
     padding:0px 20px 20px 20px;
-    border: solid 1px #e0e0e0;
+    border: solid 1px var(--border-color);
 }
 
 .evt_reg_payment_options_panel {
@@ -204,15 +205,15 @@ img.evt_conf_reg_unchecked_session_icon {
 .evt_event_details_grid {
     display:grid;
     grid-template-columns: 40px auto;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border-color);
     }
 .evt_event_details_grid > div {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--border-color);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .evt_event_details_grid .text_content {
-    border-left:1px solid #e0e0e0;
+    border-left:1px solid var(--border-color);
     padding:2px 10px 2px 10px;
     
     }
@@ -427,7 +428,7 @@ img.evt_add_to_ical_icon {
 
 /* Quick Event Pages */
 #evt_quickevent_ticket_info_box {
-	border: 1px solid #e0e0e0;
+	border: 1px solid var(--border-color);
 	border-radius: 0px;
 	padding:7px;
 }
@@ -441,7 +442,7 @@ img.evt_add_to_ical_icon {
   vertical-align: top;
 }
 .evt_fees_table > tbody > tr {
-	border-bottom:1px solid #e0e0e0;
+	border-bottom:1px solid var(--border-color);
 }
 .evt_quickevent_item_col {text-align:left;}
 .evt_quickevent_price_col {text-align:right;}
@@ -450,7 +451,7 @@ img.evt_add_to_ical_icon {
   width:100%;
 }
 #evt_quickevent_where_box {
-	border: 1px solid #e0e0e0;
+	border: 1px solid var(--border-color);
 	border-radius: 0px;
 	padding: 7px;
 }
@@ -464,7 +465,7 @@ img.evt_add_to_ical_icon {
 }
 #evt_quickevent_where_box .evt_event_details_grid > div {
     border-top:none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border-color);
 }
 .evt_quickevent_register_table {
 	margin-left:auto;
@@ -523,7 +524,7 @@ img.evt_add_to_ical_icon {
   font-family: Verdana;
   width:60px;
   margin: 0px 10px 20px 0px;
-  border: 1px #e0e0e0 solid;
+  border: 1px var(--border-color) solid;
   border-radius:2px;
   box-sizing: border-box;
 }
@@ -536,7 +537,7 @@ img.evt_add_to_ical_icon {
   padding:2px 2px 4px 2px;
 }
 .evt_cal_icon_day {
-  border:1px solid #e0e0e0;
+  border:1px solid var(--border-color);
   border-top:0px;
   margin-bottom:1px;
   padding:0px 0px 5px 0px;
@@ -676,7 +677,7 @@ a.evt_speaker_list_link {
   margin-top:5px;
   border-radius:5px;
   margin-bottom:5px;
-  border:1px solid #e0e0e0;
+  border:1px solid var(--border-color);
   display:-webkit-box;
   display:-webkit-flex;
   display:-ms-flexbox;
