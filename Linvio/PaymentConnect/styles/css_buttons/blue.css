@@ -8,6 +8,7 @@
 /* css buttons */
 .css-button, .css-button:disabled, .css-button-disabled, .css-button:active, .css-button-active {
     cursor: pointer;
+    background: var(--button-background-color-primary);
     -webkit-border-radius: 1000px;
     -moz-border-radius: 1000px;
     border-radius: 1000px;
@@ -33,12 +34,12 @@
   
   .css-button:hover, .css-button-disabled:hover, .css-button-active:hover, .css-button:hover:active, .css-buton:hover:disabled {
     color: var(--button-text-hover-color-primary);
-    background: var(--button-background-color-primary);
-    background-image: -webkit-linear-gradient(top, var(--button-background-hover-color-primary), var(--button-background-color-primary));
-    background-image: -moz-linear-gradient(top, var(--button-background-hover-color-primary), var(--button-background-color-primary));
-    background-image: -ms-linear-gradient(top, var(--button-background-hover-color-primary), var(--button-background-color-primary));
-    background-image: -o-linear-gradient(top, var(--button-background-hover-color-primary), var(--button-background-color-primary));
-    background-image: linear-gradient(to bottom, var(--button-background-hover-color-primary), var(--button-background-color-primary));
+    background: var(--button-background-hover-color-primary);
+    background-image: -webkit-linear-gradient(top, --button-background-hover-color-primary, var(--button-background-hover-color-primary));
+    background-image: -moz-linear-gradient(top, --button-background-hover-color-primary, var(--button-background-hover-color-primary));
+    background-image: -ms-linear-gradient(top, --button-background-hover-color-primary, var(--button-background-hover-color-primary));
+    background-image: -o-linear-gradient(top, --button-background-hover-color-primary, var(--button-background-hover-color-primary));
+    background-image: linear-gradient(to bottom, --button-background-hover-color-primary, var(--button-background-hover-color-primary));
     text-decoration: none;
   }
   
