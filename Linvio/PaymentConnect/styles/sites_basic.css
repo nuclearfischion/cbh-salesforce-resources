@@ -73,7 +73,7 @@ label {
 .pc_field_label_pair,
 .pc_selectlist_label_pair {
     position: relative;
-    padding-top: 1.4rem;
+    padding-top: 1.2rem;
 }
 
 .pc_field_label_pair label,
@@ -290,20 +290,12 @@ select:disabled::-ms-expand {
 }
 /* -- end of apex page message styling -- */
 
-
-.pc_page_content {
-
-}
 .rich-table-thead {
 	border:none;
 }
 
 .pc_page_content table {
 	border-collapse:collapse;
-}
-    
-.pc_page_content_inner {
-    
 }
 
 .pc_button_panel_grid {
@@ -519,15 +511,11 @@ select:disabled::-ms-expand {
 	background-repeat:no-repeat;
 }
 #pc_routing_number_tip {
-	vertical-align:middle;
     background-image: url("../images/routing_number.gif");
     height: 72px;
     width:343px;
 	display:block;
 	background-repeat:no-repeat;
-}
-#pc_cvv_number_tip {
-
 }
 
 .requiredFieldMarkerColumn {

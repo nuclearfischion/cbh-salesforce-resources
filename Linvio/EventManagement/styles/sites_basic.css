@@ -179,7 +179,7 @@ table.evt_reg_cart td {
 .evt_reg_attendee_details_panel,
 .evt_reg_payment_options_panel,
 .evt_reg_attendee_cart_panel {
-  border-radius: 5px;
+  border-radius: var(--field-border-radius);
   padding: 0px 20px 20px 20px;
   border: solid 1px var(--border-color);
 }
