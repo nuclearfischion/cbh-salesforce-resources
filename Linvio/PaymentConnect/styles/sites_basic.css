@@ -46,6 +46,10 @@
   --apex-pagemessage-background-color: #fff5cc;
   --apex-pagemessage-border-color: #e8e8e8;
   --apex-pagemessage-border-width: 1px;
+
+  /* Surface colors */
+  /* Best used for surface elements like cards, backgrounds, and other surface elements. */
+  --surface-1: #292C36;
 }
 
 ::-webkit-input-placeholder {
@@ -762,7 +766,7 @@ input[type="button"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--surface-1);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
