@@ -8,8 +8,7 @@
 @media screen and (max-width: 739px) {
   .fs-grid .fs-row,
   .fs_grid_row {
-    width: 96%;
-    width: calc(100% - 40px);
+    width: 100%;
   }
 }
 @media screen and (min-width: 740px) {
@@ -41,8 +40,7 @@
 }
 .fs-grid-fluid .fs-row,
 .fs_grid_row_fluid {
-  width: 96%;
-  width: calc(100% - 40px);
+  width: 100%;
 }
 @media screen and (max-width: 499px) {
   .fs-grid-adaptive .fs-row,
