@@ -4,6 +4,7 @@
 
 :root {
   --border-color: #e0e0e0;
+  --field-border-radius: 8px;
 }
 
 .evt_attendee_table {
