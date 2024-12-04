@@ -181,13 +181,12 @@ label {
 /* -- select list styling -- */
 
 body select.css-select { 
-    /* display: block; */
-    padding: 12px 70px 12px 13px !important; 
+    padding: 12px 70px 12px 12px !important; 
     max-width: 100%; height: auto !important; 
     border: var(--field-border-width,1px) solid var(--field-border-color,#000); 
     border-radius:var(--field-border-radius,5px);
     margin-bottom:10px;
-    /* width:100%; */
+    width:100%;
     background: url("../images/selectbox_arrow.png") right center no-repeat; 
     background-color: #fff; 
     color: #444444; 
