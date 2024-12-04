@@ -1,7 +1,7 @@
 /* -------------------------------------------------- */
 /* Basic style sheet for PaymentConnect Sites pages   */
 /* Minimal styling, to simplify use with existing     */
-/* customer Sites style sheet(s)                      */ 
+/* customer Sites style sheet(s)                      */
 /* Updated 12/27/2018                                 */
 /* -------------------------------------------------- */
 @import url("formstone/background.css");
@@ -26,197 +26,199 @@
 @import url("css_buttons/gray.css");
 @import url("../includes/busy_indicator/busy_indicator.css");
 
-
 /* -- Placeholder styling.  Override in Site Template using --placeholder-color css var -- */
 :root {
-	--placeholder-color: #b9b9b9;	
+  --placeholder-color: #b9b9b9;
 
-    /* -- Form field label styling -- */
-    --field-label-color: #404040;
-    --field-label-font-size: inherit;
+  /* -- Form field label styling -- */
+  --field-label-color: #404040;
+  --field-label-font-size: inherit;
 
-    /* -- input field styling -- */
-    --field-border-width: 1px;
-    --field-border-color: #a9a9a9;
-    --field-border-radius: 8px;
-    --field-border-color-on-focus: #a9a9a9;	
-    --field-box-shadow-color: #9ecaed;
-    --field-box-shadow-blur: 10px;
+  /* -- input field styling -- */
+  --field-border-width: 1px;
+  --field-border-color: #a9a9a9;
+  --field-border-radius: 8px;
+  --field-border-color-on-focus: #a9a9a9;
+  --field-box-shadow-color: #9ecaed;
+  --field-box-shadow-blur: 10px;
 
-    /* -- apex page message styling -- */
-    --apex-pagemessage-background-color: #fff5cc;
-    --apex-pagemessage-border-color: #e8e8e8;
-    --apex-pagemessage-border-width: 1px;
-}
-
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: var(--placeholder-color, #b9b9b9);
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: var(--placeholder-color, #b9b9b9);
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: var(--placeholder-color, #b9b9b9);
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-   color: var(--placeholder-color, #b9b9b9);
+  /* -- apex page message styling -- */
+  --apex-pagemessage-background-color: #fff5cc;
+  --apex-pagemessage-border-color: #e8e8e8;
+  --apex-pagemessage-border-width: 1px;
 }
 
-textarea::-webkit-input-placeholder { /* WebKit browsers */
-    color: var(--placeholder-color, #b9b9b9);
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--placeholder-color, #b9b9b9);
 }
-textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: var(--placeholder-color, #b9b9b9);
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--placeholder-color, #b9b9b9);
 }
-textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: var(--placeholder-color, #b9b9b9);
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--placeholder-color, #b9b9b9);
 }
-textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
-   color: var(--placeholder-color, #b9b9b9);
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--placeholder-color, #b9b9b9);
+}
+
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--placeholder-color, #b9b9b9);
+}
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--placeholder-color, #b9b9b9);
+}
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--placeholder-color, #b9b9b9);
+}
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--placeholder-color, #b9b9b9);
 }
 /* -- end of placeholder styling -- */
 
-
-label {   
-    color: #404040;
-    color: var(--field-label-color,#404040);
-    text-decoration: none;
-    font-size: var(--field-label-font-size);
+label {
+  color: #404040;
+  color: var(--field-label-color, #404040);
+  text-decoration: none;
+  font-size: var(--field-label-font-size);
 }
 /* -- New float label css -- */
 .pc_field_label_pair,
 .pc_selectlist_label_pair {
-    position: relative;
-    padding-top: 1.2rem;
+  position: relative;
+  padding-top: 1.2rem;
 }
 
 .pc_field_label_pair label,
 .pc_selectlist_label_pair label {
-    display:block;
-    position: absolute;
-    top: 0;
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.2s ease-out;
+  display: block;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
 }
 .pc_field_label_pair input {
-    display:block;
+  display: block;
 }
 .pc_float_labels .pc_field_label_pair input:placeholder-shown + label {
-    opacity: 0;
-    transform: translateY(1rem);
+  opacity: 0;
+  transform: translateY(1rem);
 }
 .pc_float_labels .pc_selectlist_label_pair label {
-   visibility:hidden;
+  visibility: hidden;
 }
 
 /* -- end of form field label styling -- */
 
-
-
-
-.pc_page input[type=date],
-.pc_page input[type=text],
-.pc_page input[type=number],
-.pc_page input[type=url],
-.pc_page input[type=password],
-.pc_page input[type=tel],
-.pc_page input[type=email]
-    {
-    	font-size:14px;
-    	padding:12px;
-		border: var(--field-border-width,1px) solid var(--field-border-color,#000);
-    	border-radius:var(--field-border-radius,8px);
-    	margin-bottom:10px;
-		/* width:100%; */
-    }
-.pc_page .fs-grid input[type=date],
-.pc_page .fs-grid input[type=text],
-.pc_page .fs-grid input[type=number],
-.pc_page .fs-grid input[type=url],
-.pc_page .fs-grid input[type=password],
-.pc_page .fs-grid input[type=tel],
-.pc_page .fs-grid input[type=email] 
-{
-        width:100%;
-
+.pc_page input[type="date"],
+.pc_page input[type="text"],
+.pc_page input[type="number"],
+.pc_page input[type="url"],
+.pc_page input[type="password"],
+.pc_page input[type="tel"],
+.pc_page input[type="email"] {
+  font-size: 14px;
+  padding: 12px;
+  border: var(--field-border-width, 1px) solid var(--field-border-color, #000);
+  border-radius: var(--field-border-radius, 8px);
+  margin-bottom: 10px;
+  /* width:100%; */
+}
+.pc_page .fs-grid input[type="date"],
+.pc_page .fs-grid input[type="text"],
+.pc_page .fs-grid input[type="number"],
+.pc_page .fs-grid input[type="url"],
+.pc_page .fs-grid input[type="password"],
+.pc_page .fs-grid input[type="tel"],
+.pc_page .fs-grid input[type="email"] {
+  width: 100%;
 }
 
-.pc_page input[type=date]:focus,
-.pc_page input[type=text]:focus,
-.pc_page input[type=number]:focus,
-.pc_page input[type=url],
-.pc_page input[type=password]:focus,
-.pc_page input[type=tel]:focus,
-.pc_page input[type=email]:focus { 
-	    outline: none;
-		border-color: #9ecaed;
-	    border-color: var(--field-border-color-on-focus,#9ecaed);
-	    box-shadow: 0 0 var(--field-box-shadow-blur,10px) var(--field-box-shadow-color,#9ecaed);
-	}
+.pc_page input[type="date"]:focus,
+.pc_page input[type="text"]:focus,
+.pc_page input[type="number"]:focus,
+.pc_page input[type="url"],
+.pc_page input[type="password"]:focus,
+.pc_page input[type="tel"]:focus,
+.pc_page input[type="email"]:focus {
+  outline: none;
+  border-color: #9ecaed;
+  border-color: var(--field-border-color-on-focus, #9ecaed);
+  box-shadow: 0 0 var(--field-box-shadow-blur, 10px)
+    var(--field-box-shadow-color, #9ecaed);
+}
 
 .fs-dropdown.fs-light {
-    margin-bottom:10px;
-    }
+  margin-bottom: 10px;
+}
 .fs-dropdown.fs-light .fs-dropdown-selected {
-    height:45px;
-    outline-color: transparent;
-	outline-width: 0px;
-    border-radius:var(--field-border-radius,5px);
-    border: solid var(--field-border-color,#000) var(--field-border-width,1px);
-    }
- .fs-dropdown-selected:focus {
-     outline-color: transparent;
-	 outline-width: 0px;
-	 border-color: var(--field-border-color-on-focus,#000);
-	 box-shadow: 0 0 var(--field-box-shadow-blur,10px) var(--field-box-shadow-color,#9ecaed);
- }
+  height: 45px;
+  outline-color: transparent;
+  outline-width: 0px;
+  border-radius: var(--field-border-radius, 5px);
+  border: solid var(--field-border-color, #000) var(--field-border-width, 1px);
+}
+.fs-dropdown-selected:focus {
+  outline-color: transparent;
+  outline-width: 0px;
+  border-color: var(--field-border-color-on-focus, #000);
+  box-shadow: 0 0 var(--field-box-shadow-blur, 10px)
+    var(--field-box-shadow-color, #9ecaed);
+}
 
- .css-checkbox {
-    height:30px;
-    width:30px;
-    vertical-align:middle;
-    }
+.css-checkbox {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
 
 .pc_required_label {
-  margin-right:2px;
+  margin-right: 2px;
 }
 /* -- input field styling -- */
 
-
 /* -- select list styling -- */
 
-body select.css-select { 
-    padding: 12px 70px 12px 12px !important; 
-    max-width: 100%; height: auto !important; 
-    border: var(--field-border-width,1px) solid var(--field-border-color,#000); 
-    border-radius:var(--field-border-radius,5px);
-    margin-bottom:10px;
-    width:100%;
-    background: url("../images/selectbox_arrow.png") right center no-repeat; 
-    background-color: #fff; 
-    color: #444444; 
-    font-size: 14px; 
-    line-height: 16px !important; 
-    appearance: none; /* this is must */ 
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-} 
+body select.css-select {
+  padding: 12px 70px 12px 12px !important;
+  max-width: 100%;
+  height: auto !important;
+  border: var(--field-border-width, 1px) solid var(--field-border-color, #000);
+  border-radius: var(--field-border-radius, 5px);
+  margin-bottom: 10px;
+  width: 100%;
+  background: url("../images/selectbox_arrow.png") right center no-repeat;
+  background-color: #fff;
+  color: #444444;
+  font-size: 14px;
+  line-height: 16px !important;
+  appearance: none; /* this is must */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
-body select.css-select option { 
-    font-size: 14px;
-    padding: 0 5px; 
-} 
-    
-/* for IE and Edge */ 
-select::-ms-expand { 
-    display: none; 
+body select.css-select option {
+  font-size: 14px;
+  padding: 0 5px;
 }
-    
-select:disabled::-ms-expand { 
-    background: #f60; 
+
+/* for IE and Edge */
+select::-ms-expand {
+  display: none;
 }
-    
+
+select:disabled::-ms-expand {
+  background: #f60;
+}
+
 /* -- end of select list styling -- */
 
 /* -- "busy indicator" styling -- */
@@ -233,511 +235,513 @@ select:disabled::-ms-expand {
   background-color: rgba(30, 30, 30, 0.5);
 }
 #busybox.show {
-	display: block;
-
+  display: block;
 }
 /* -- end of busy indicator styling -- */
 
 .pc_page .message {
-	border: var(--apex-pagemessage-border-width,1px) solid var(--apex-pagemessage-border-color,#e8e8e8);
-    background: var(--apex-pagemessage-background-color,#fff5cc);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-	padding: 4px;
-	margin: 4px 0px 4px 0px;
+  border: var(--apex-pagemessage-border-width, 1px) solid
+    var(--apex-pagemessage-border-color, #e8e8e8);
+  background: var(--apex-pagemessage-background-color, #fff5cc);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 4px;
+  margin: 4px 0px 4px 0px;
 }
 
 .pc_page .messageCell h4 {
-	display:inline;
-	margin:0px;
-	margin-right:2px;
-	
+  display: inline;
+  margin: 0px;
+  margin-right: 2px;
 }
 
-.pc_page .message img[title="ERROR"], .pc_page .message img[title="error"] {
-	margin-right:4px;
-	background-image: url(/img/msg_icons/error24.png);
-	background-position: 0px 0px;
-	width: 24px;
-	height: 24px;
+.pc_page .message img[title="ERROR"],
+.pc_page .message img[title="error"] {
+  margin-right: 4px;
+  background-image: url(/img/msg_icons/error24.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
 }
 
-.pc_page .message img[title="INFO"], .pc_page .message img[title="info"] {
-	margin-right:4px;
-	background-image: url(/img/msg_icons/info24.png);
-	background-position: 0px 0px;
-	width: 24px;
-	height: 24px;
+.pc_page .message img[title="INFO"],
+.pc_page .message img[title="info"] {
+  margin-right: 4px;
+  background-image: url(/img/msg_icons/info24.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
 }
 
-.pc_page .message img[title="CONFIRM"], .pc_page .message img[title="confirm"] {
-	margin-right:4px;
-	background-image: url(/img/msg_icons/confirm24.png);
-	background-position: 0px 0px;
-	width: 24px;
-	height: 24px;
+.pc_page .message img[title="CONFIRM"],
+.pc_page .message img[title="confirm"] {
+  margin-right: 4px;
+  background-image: url(/img/msg_icons/confirm24.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
 }
 
-
-.pc_page .message img[title="WARNING"], .pc_page .message img[title="warning"] {
-	margin-right:4px;
-	background-image: url(/img/msg_icons/warning24.png);
-	background-position: 0px 0px;
-	width: 24px;
-	height: 24px;
+.pc_page .message img[title="WARNING"],
+.pc_page .message img[title="warning"] {
+  margin-right: 4px;
+  background-image: url(/img/msg_icons/warning24.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
 }
 /* -- end of apex page message styling -- */
 
 .rich-table-thead {
-	border:none;
+  border: none;
 }
 
 .pc_page_content table {
-	border-collapse:collapse;
+  border-collapse: collapse;
 }
 
 .pc_button_panel_grid {
-	white-space:nowrap;
+  white-space: nowrap;
 }
-    
+
 .pc_long_input_field {
-    width:250px;
+  width: 250px;
 }
 
 .pc_short_input_field {
-    width:100px;
+  width: 100px;
 }
 
 .pc_product_image {
-	width:120px;
+  width: 120px;
 }
 
-.pc_cart_item_table, .pc_opp_line_item_table, .pc_record_listing_table  {
-    width:100%;
-	border-bottom: 1px solid #e9e9e9;
-	border-left:0px;
-	border-right:0px;
-	border-collapse:collapse;
+.pc_cart_item_table,
+.pc_opp_line_item_table,
+.pc_record_listing_table {
+  width: 100%;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 0px;
+  border-right: 0px;
+  border-collapse: collapse;
 }
 
-.pc_cart_item_table th, .pc_opp_line_item_table th, .pc_record_listing_table th {
-	padding:2px 4px 2px 4px;
-	border-bottom: 1px solid #e9e9e9;
-	border-top: 1px solid #e9e9e9;
-	color: #666666;
-    text-align:left;
-    vertical-align:top;
+.pc_cart_item_table th,
+.pc_opp_line_item_table th,
+.pc_record_listing_table th {
+  padding: 2px 4px 2px 4px;
+  border-bottom: 1px solid #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  color: #666666;
+  text-align: left;
+  vertical-align: top;
 }
 
-.pc_cart_item_table td, .pc_opp_line_item_table td, .pc_record_listing_table td {
-	padding:2px 4px 2px 4px;
-    text-align:left;
-    vertical-align:top;
+.pc_cart_item_table td,
+.pc_opp_line_item_table td,
+.pc_record_listing_table td {
+  padding: 2px 4px 2px 4px;
+  text-align: left;
+  vertical-align: top;
 }
-
 
 .pc_opp_line_item .table_headings {
-    visibility:visible;
+  visibility: visible;
 }
 
 .pc_cart_item .table_headings {
-    visibility:visible;
+  visibility: visible;
 }
 
 .pc_form_table {
-	border:none;
-	border-collapse:collapse;
-	
+  border: none;
+  border-collapse: collapse;
 }
 .pc_form_table tr {
-	border:none;
+  border: none;
 }
 .pc_form_table td {
-	border:none;
-	vertical-align:top;
+  border: none;
+  vertical-align: top;
 }
 
 .pc_payment_methods_table {
-	width:100%;
+  width: 100%;
 }
 .pc_payment_methods_table td {
-	vertical-align:top;
+  vertical-align: top;
 }
 
 .pc_page .currency_column {
-    text-align:right;
+  text-align: right;
 }
 
 .pc_page .leftAlign {
-    text-align:left;
+  text-align: left;
 }
 
 .pc_page .rightAlign {
-    text-align:right;
+  text-align: right;
 }
 
 .pc_page .labelColumn {
-    width:150px;
-    font-weight:normal;
-    text-align:right;
-    padding-right:6px;
-	color: var(--field-label-color, #404040);
+  width: 150px;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 6px;
+  color: var(--field-label-color, #404040);
 }
 .pc_checkout_totals {
-	width:200px;
-	margin-left:auto;
+  width: 200px;
+  margin-left: auto;
 }
 .pc_checkout_totals table {
-	width:100%;
+  width: 100%;
 }
 .pc_checkout_totals table td {
-    padding:7px;
+  padding: 7px;
 }
 .pc_quote_expiration {
-	margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .pc_button_panel_grid input[type="button"] {
-	margin-right:4px;
+  margin-right: 4px;
 }
 .pc_accepted_cards_panel {
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 #pc_accepted_card_logos {
-    display: none;
-   /* background-image: url("../images/credit_card_logos_30.gif"); */
+  display: none;
+  /* background-image: url("../images/credit_card_logos_30.gif"); */
 }
 
 #pc_accepted_card_visa {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/Visa.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/Visa.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_mastercard {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/MasterCard.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/MasterCard.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_amex {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/AmericanExpress.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/AmericanExpress.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_jcb {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/JCB.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/JCB.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_discover {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/Discover.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/Discover.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_maestro {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/Maestro.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/Maestro.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_solo {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/Solo.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
-
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/Solo.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_dinersclub {
-	vertical-align:middle;
-    background-image: url("../images/card_icons/32/DinersClub.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/DinersClub.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_accepted_card_paypal {
-    vertical-align:middle;
-    background-image: url("../images/card_icons/32/PayPal.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-    background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/PayPal.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_bank_account_icon {
-    vertical-align:middle;
-    background-image: url("../images/card_icons/32/Bank.png");
-    height: 32px;
-    width:32px;
-    margin-left:4px;
-    background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/card_icons/32/Bank.png");
+  height: 32px;
+  width: 32px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 
 #pc_cvv_icon {
-	vertical-align:middle;
-    background-image: url("../images/mini_cvv2.gif");
-    height: 31px;
-    width:51px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/mini_cvv2.gif");
+  height: 31px;
+  width: 51px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 
 #pc_routing_number_img {
-	vertical-align:middle;
-    background-image: url("../images/blank_check_24x53.png");
-    height: 24px;
-    width:53px;
-    margin-left:4px;
-	background-repeat:no-repeat;
+  vertical-align: middle;
+  background-image: url("../images/blank_check_24x53.png");
+  height: 24px;
+  width: 53px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
 }
 #pc_routing_number_tip {
-    background-image: url("../images/routing_number.gif");
-    height: 72px;
-    width:343px;
-	display:block;
-	background-repeat:no-repeat;
+  background-image: url("../images/routing_number.gif");
+  height: 72px;
+  width: 343px;
+  display: block;
+  background-repeat: no-repeat;
 }
 
 .requiredFieldMarkerColumn {
-	width:4px;
-	}
+  width: 4px;
+}
 
 img.requiredFieldMarker {
-  width:5px;
-  height:15px;
+  width: 5px;
+  height: 15px;
   background-image: url("../images/required10.gif");
   background-repeat: no-repeat;
 }
 
 img.optionalFieldMarker {
-  width:5px;
+  width: 5px;
 }
 
 img.warning_icon_small {
-	width:16px;
-	background-image: url("../images/error.png");
-	background-repeat: no-repeat;
+  width: 16px;
+  background-image: url("../images/error.png");
+  background-repeat: no-repeat;
 }
 
 .payPalExpressCheckoutButton {
   background: url("../images/express-checkout-paypal3.png");
   height: 38px;
-  width:200px;
+  width: 200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
 /* FancyZoom javascript plug-in */
-#ShadowBox table tr th, #ShadowBox table tr td {
-    padding:0px;
+#ShadowBox table tr th,
+#ShadowBox table tr td {
+  padding: 0px;
 }
 
 /* Payment Method Widget */
 
 .payment_method_widget {
-  border:1px solid #a8a8a8; 
-  padding:0px;
-  border-radius:5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  margin-bottom:8px;
+  border: 1px solid #a8a8a8;
+  padding: 0px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 8px;
 }
 .payment_method_widget_body {
-  padding:5px;
-  border-top:1px solid #a8a8a8;
+  padding: 5px;
+  border-top: 1px solid #a8a8a8;
 }
 .payment_method_widget_header {
-    padding:8px;
-    background:#f8f8f8;
-    border-radius:5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;    
+  padding: 8px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 img.expand_icon {
-  
-  float:right;
-  height:20px;
-  width:20px;
+  float: right;
+  height: 20px;
+  width: 20px;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-image:  url("../images/Icon_Circle_MoreDown.png");
+  background-image: url("../images/Icon_Circle_MoreDown.png");
 }
 
-.payment_method_widget.expanded .payment_method_widget_header{
-    border-bottom-left-radius:0px;
-    border-bottom-right-radius:0px;
-    -moz-border-bottom-left-radius:0px;
-    -moz-border-bottom-right-radius:0px;
-    -webkit-border-bottom-left-radius:0px; 
-    -webkit-border-bottom-right-radius:0px; 
+.payment_method_widget.expanded .payment_method_widget_header {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
 }
 
 .pmt_method_details_container {
-    display: flex;
-    align-items: left;
-    flex-flow: row wrap;
+  display: flex;
+  align-items: left;
+  flex-flow: row wrap;
 }
 .pmt_method_details_item {
-    padding:5px 10px 0px 5px;
+  padding: 5px 10px 0px 5px;
 }
 
 /* Flex Form styling - form layout allowing collapsable labels and fields when browser viewport shrinks */
-input[type="submit"], input[type="button"] {
-    margin-bottom:8px;
-    margin-top:8px;
+input[type="submit"],
+input[type="button"] {
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 .pc_flex_form {
-    width:100%;
-
+  width: 100%;
 }
 
 .pc_button_container {
-    margin-top:20px;
-    padding-left:180px;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+  margin-top: 20px;
+  padding-left: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .pc_flex_form_line_container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack:start;
-    -webkit-justify-content:flex-start;
-        -ms-flex-pack:start;
-            justify-content:flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .pc_flex_form_label_item {
-    padding:4px;
-    text-align:right;
-   -webkit-box-flex: 0;
-   -webkit-flex: 0 0 150px;
-       -ms-flex: 0 0 150px;
-           flex: 0 0 150px;
+  padding: 4px;
+  text-align: right;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 150px;
+  -ms-flex: 0 0 150px;
+  flex: 0 0 150px;
 }
 .pc_flex_form_required_flag_item {
-    padding:4px 0px 0px 0px;
-    text-align:center;
-   -webkit-box-flex: 0;
-   -webkit-flex: 0 0 20px;
-       -ms-flex: 0 0 20px;
-           flex: 0 0 20px;
+  padding: 4px 0px 0px 0px;
+  text-align: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20px;
+  -ms-flex: 0 0 20px;
+  flex: 0 0 20px;
 }
 
 .pc_flex_form_field_item {
-    padding:4px;
-    -webkit-box-flex: 4;
-    -webkit-flex: 4 4 auto;
-        -ms-flex: 4 4 auto;
-            flex: 4 4 auto;
+  padding: 4px;
+  -webkit-box-flex: 4;
+  -webkit-flex: 4 4 auto;
+  -ms-flex: 4 4 auto;
+  flex: 4 4 auto;
 }
 
 .pc_flex_form_field_item fieldset table {
-    margin:0px;
+  margin: 0px;
 }
 .pc_flex_form_field_item fieldset table td {
-    padding:0px 5px 0px 0px;
+  padding: 0px 5px 0px 0px;
 }
 /* flex styling for pc_flex_imagedetailtable (tables with a thumbnail or small image in the left column and details in the right) */
 .pc_flex_imagedetailtable {
-    width:100%;
-
+  width: 100%;
 }
 
 .pc_flex_imagedetailtable_line_container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack:start;
-    -webkit-justify-content:flex-start;
-        -ms-flex-pack:start;
-            justify-content:flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .pc_flex_imagedetailtable_image_item {
-    padding:4px;
-    text-align:left;
-   -webkit-box-flex: 0;
-   -webkit-flex: 0 0 auto;  /* was 150px */
-       -ms-flex: 0 0 auto;
-           flex: 0 0 auto;
+  padding: 4px;
+  text-align: left;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto; /* was 150px */
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .pc_flex_imagedetailtable_detail_item {
-    padding:4px;
-    -webkit-box-flex: 4;
-    -webkit-flex: 4 4 auto;
-        -ms-flex: 4 4 auto;
-            flex: 4 4 auto;
+  padding: 4px;
+  -webkit-box-flex: 4;
+  -webkit-flex: 4 4 auto;
+  -ms-flex: 4 4 auto;
+  flex: 4 4 auto;
 }
 
 /* css buttons */
 
-
 .pc_button_container_spinner {
-	/* background-image: url("../images/icon_spinner_bars.gif"); */
-	background-image: url("../images/icon_spinner_circles.gif");
-	background-size:25px 25px;
-	height:25px;
-	width:25px;
+  /* background-image: url("../images/icon_spinner_bars.gif"); */
+  background-image: url("../images/icon_spinner_circles.gif");
+  background-size: 25px 25px;
+  height: 25px;
+  width: 25px;
 }
 .pc_button_spinner_panel {
-	vertical-align:middle;
+  vertical-align: middle;
 }
 
 /* HTML5 Validation fall back script - uses this css to show invalid fields */
 .invalid input:required:invalid {
-    background: #FFE0A1;
+  background: #ffe0a1;
 }
 
 .invalid input:required:valid {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 /* Login page */
-.pc_sitelogin_panel  {
-    box-sizing: border-box;
-    border:1px solid #e0e0e0;
-    margin:100px auto 200px auto;
-    max-width:350px;
-    padding:20px;
-    box-shadow:5px 5px 12px grey; 
-    }
+.pc_sitelogin_panel {
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  margin: 100px auto 200px auto;
+  max-width: 350px;
+  padding: 20px;
+  box-shadow: 5px 5px 12px grey;
+}
 .pc_sitelogin_panel input {
-    width:100%;
+  width: 100%;
 }
 /* ----- css slider checkbox styling ----------- */
 .css-switch {
@@ -747,7 +751,9 @@ input[type="submit"], input[type="button"] {
   height: 24px;
 }
 
-.css-switch input {display:none;}
+.css-switch input {
+  display: none;
+}
 
 .css-slider {
   position: absolute;
@@ -757,8 +763,8 @@ input[type="submit"], input[type="button"] {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .css-slider:before {
@@ -769,16 +775,16 @@ input[type="submit"], input[type="button"] {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .css-slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 input:focus + .css-slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .css-slider:before {
@@ -796,17 +802,17 @@ input:checked + .css-slider:before {
   border-radius: 50%;
 }
 .pc_checkbox_label_pair {
-    display:grid;
-    grid-template-columns: 50px 200px;
-    margin:5px 0px 5px 0px;
+  display: grid;
+  grid-template-columns: 50px 200px;
+  margin: 5px 0px 5px 0px;
 }
 
 /* ------ Google recaptcha box --------- */
 .g-recaptcha {
-   text-align:center;
-    margin-top:20px;
-}    
+  text-align: center;
+  margin-top: 20px;
+}
 .g-recaptcha > div {
-    width:auto !important;
-    }
-/* ----------------------------------------- */ 
+  width: auto !important;
+}
+/* ----------------------------------------- */
