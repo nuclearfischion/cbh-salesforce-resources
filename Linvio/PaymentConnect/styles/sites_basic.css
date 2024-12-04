@@ -30,7 +30,25 @@
 /* -- Placeholder styling.  Override in Site Template using --placeholder-color css var -- */
 :root {
 	--placeholder-color: #b9b9b9;	
+
+    /* -- Form field label styling -- */
+    --field-label-color: #404040;
+    --field-label-font-size: inherit;
+
+    /* -- input field styling -- */
+    --field-border-width: 1px;
+    --field-border-color: #a9a9a9;
+    --field-border-radius: 8px;
+    --field-border-color-on-focus: #a9a9a9;	
+    --field-box-shadow-color: #9ecaed;
+    --field-box-shadow-blur: 10px;
+
+    /* -- apex page message styling -- */
+    --apex-pagemessage-background-color: #fff5cc;
+    --apex-pagemessage-border-color: #e8e8e8;
+    --apex-pagemessage-border-width: 1px;
 }
+
 ::-webkit-input-placeholder { /* WebKit browsers */
     color: var(--placeholder-color, #b9b9b9);
 }
@@ -58,11 +76,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 /* -- end of placeholder styling -- */
 
-/* -- Form field label styling -- */
-:root {
-  --field-label-color: #404040;
-  --field-label-font-size: inherit;
-}
+
 label {   
     color: #404040;
     color: var(--field-label-color,#404040);
@@ -100,15 +114,7 @@ label {
 
 
 
-/* -- input field styling -- */
-:root {
-	--field-border-width: 1px;
-	--field-border-color: #a9a9a9;
-	--field-border-radius: 8px;
-	--field-border-color-on-focus: #a9a9a9;	
-	--field-box-shadow-color: #9ecaed;
-	--field-box-shadow-blur: 10px;
-}
+
 .pc_page input[type=date],
 .pc_page input[type=text],
 .pc_page input[type=number],
@@ -231,13 +237,6 @@ select:disabled::-ms-expand {
 
 }
 /* -- end of busy indicator styling -- */
-
-/* -- apex page message styling -- */
-:root {
-    --apex-pagemessage-background-color: #fff5cc;
-    --apex-pagemessage-border-color: #e8e8e8;
-    --apex-pagemessage-border-width: 1px;
-}
 
 .pc_page .message {
 	border: var(--apex-pagemessage-border-width,1px) solid var(--apex-pagemessage-border-color,#e8e8e8);
