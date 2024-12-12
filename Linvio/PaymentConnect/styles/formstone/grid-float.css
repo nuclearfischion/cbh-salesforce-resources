@@ -1,10 +1,4 @@
 /*! formstone v1.4.0 [grid-float.css] 2017-09-17 | GPL-3.0 License | formstone.it */
-.fs-grid .fs-row,
-.fs_grid_row {
-  min-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (max-width: 739px) {
   .fs-grid .fs-row,
   .fs_grid_row {
