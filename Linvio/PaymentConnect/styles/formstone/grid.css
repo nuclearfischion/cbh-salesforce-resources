@@ -1,7 +1,6 @@
 /*! formstone v1.4.0 [grid.css] 2017-09-17 | GPL-3.0 License | formstone.it */
 .fs-grid .fs-row,
 .fs_grid_row {
-  min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
