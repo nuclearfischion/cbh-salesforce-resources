@@ -278,7 +278,8 @@ img.evt_add_to_ical_icon {
   vertical-align: text-top;
 }
 .evt_session_selection_table tr:nth-child(even) {
-  background-color: #f8f8f8;
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 
 .evt_session_table_name_value {
