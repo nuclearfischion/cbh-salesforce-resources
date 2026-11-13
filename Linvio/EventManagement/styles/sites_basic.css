@@ -496,6 +496,11 @@ img.evt_add_to_ical_icon {
   width: 100%;
 }
 
+/* Controls first page of registration  */
+.evt_quick_event_header {
+  display: none;
+}
+
 #quick_event_detail_flex {
   min-height: 400px;
   margin: 0px;
@@ -504,9 +509,16 @@ img.evt_add_to_ical_icon {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+#evt_quickevent_registration_box {
+  border-radius: var(--border-radius);
+  margin: 20px 0;
+  padding: 0px 20px 20px 20px;
+  border: solid 1px var(--border-color);
 }
 
 #quick_event_detail_flex > article {
