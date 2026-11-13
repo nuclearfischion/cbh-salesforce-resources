@@ -515,10 +515,10 @@ img.evt_add_to_ical_icon {
 }
 
 #evt_quickevent_registration_box {
-  border-radius: var(--border-radius);
-  margin: 20px 0;
-  padding: 0px 20px 20px 20px;
-  border: solid 1px var(--border-color);
+  border-radius: var(--border-radius) !important;
+  margin: 20px 0 !important;
+  padding: 0px 20px 20px 20px !important;
+  border: solid 1px var(--border-color) !important;
 }
 
 #quick_event_detail_flex > article {
