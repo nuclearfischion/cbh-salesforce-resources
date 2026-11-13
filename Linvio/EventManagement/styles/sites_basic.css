@@ -549,6 +549,7 @@ img.evt_add_to_ical_icon {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  align-self: anchor-center;
 }
 
 /* ------- Event List Calendar Page "Icon" used when no images are avail ---- */
